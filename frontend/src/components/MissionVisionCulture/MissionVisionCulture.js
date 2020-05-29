@@ -57,7 +57,7 @@ export default function MissionVisionCulture(){
     return(
         <section style={style.section} className='mb-5 container'>
             <div className="row">
-                <h2 className=" col-xs-12 col-md-12 h2 font-weight-bold text-xs-left text-md-center">
+                <h2 className=" col-xs-12 col-md-12 h2 font-weight-bold text-xs-left text-md-center mb-3">
                     {title}
                 </h2>
                 <p className="col-xs-12  col-md-12 text-xs-left text-md-center">

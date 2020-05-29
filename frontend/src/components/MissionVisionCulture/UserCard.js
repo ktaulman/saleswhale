@@ -22,7 +22,7 @@ export default function UserCard({iconURL,title,content}){
             />
           <div className='card-body text-left p-0'>
 
-            <h3 class="card-title h4 mb-2">
+            <h3 class="card-title h5 mb-2">
               {title}
             </h3>
 

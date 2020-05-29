@@ -60,13 +60,13 @@ export default function Timeline(){
     if(!info) return <p>Loadding...</p>
 
     return(
-        <section style={style.section} className='mb-5 u-space-1 u-space-2-top--md u-space-2-bottom--md w-100
+        <section style={style.section} className='mb-5 pt-5 pb-5 w-100
         '>
             <h2 class="mb-3 text-center font-weight-bold">Our Progress</h2>  
             <div 
             style={style.main}
             >
-
+                <TimelineCard empty />
                 {
                     info.map(item=>{
                         const {iconURL,year,content}=item;

@@ -47,12 +47,13 @@ const data={
         },
         offices:[
             {
-                title:'',
-                content:''
+                title:'US Office',
+                content:`1701 Rhode Island 
+                Ave NW Washington, DC 20036`
             },
             {
-                title:'',
-                content:''
+                title:'Singapore Office',
+                content:'155B Telok Ayer Street Singapore, 068611'
             }
         ]
     }
@@ -115,26 +116,50 @@ export default function Footer(){
                                     />
                                 )
                         })}
+                       <div className='col-6 pl-0' >
+                        <div className="flex-column mb-0">
+                        <h3 className=' h5 p-0 m-0 mb-2 font-weight-bold'>{contactUs.email.title}</h3>
+                        <p className='nav-body'>
+                            {contactUs.email.content}
+                        </p>
+                        </div>
 
-                        
-                        
+                        <div className="flex-column  mb-1">
+                        <h3 className=' h5 p-0 m-0 mb-2 font-weight-bold'>{contactUs.offices[0].title}</h3>
+                        <p className=''>
+                            {contactUs.offices[0].content}
+                        </p>
+                        </div>
+                        <div className=" flex-column mb-1">
+                        <h3 className='h5 p-0 m-0 mb-2 font-weight-bold'>{contactUs.offices[1].title}</h3>
+                        <p className='nav-body'>
+                            {contactUs.offices[1].content}
+                        </p>
+                        </div>
+                    
+                        </div>
                     </div>
                 </div>
             </div>
             
             <div style={style.lower}  className="row">
-                <div className='row col-12 mb-5'>
-                    <div className='col-12 mt-5 d-flex text-center'>
-                        <img src={facebook} className='p-3'/>
-                        <img src={twitter} className='p-3'/>
-                        <img src={linkedin} className='p-3'/>
+                    <div className='col-sm-6 col-md-8 col-xs-12 col-sm-1 order-sm-1 order-md-2
+                    ml-0 mt-2 mb-2 pr-2 d-flex justify-content-center justify-content-md-end justify-content-sm-start p-0'>
+                        <img src={facebook} className='p-2 order-1'/>
+                        <img src={twitter} className='p-2'/>
+                        <img src={linkedin} className='p-2'/>
                     </div>
-                    <h4 className='col-md-3 col-sm-3 col-12 h5 text-sm-left text-center'>Privacy</h4>
-                    <h4 className='col-md-3 col-sm-3 col-12 h5 text-sm-left text-center'>Terms</h4>
-                    <p className="col-12 text-sm-left text-center">© 2020 Saleswhale, Inc. All rights reserved. </p>
-                </div>
+
+                    <div className='col-12 col-sm-3 col-md-3 col-lg-3 p-3'>
+                        <div className='row p-3'>
+                        <h4 className='col-md-6 col-sm-6 col-12 h5 text-sm-left text-center'>Privacy</h4>
+                        <h4 className='col-md-6 col-sm-6 col-12 h5 text-sm-left text-center'>Terms</h4>
+                        </div>
+                        <p className="col-12 text-sm-left text-center">© 2020 Saleswhale, Inc. All rights reserved. </p>
+                    </div>
                 
-                <img src={background} className='img w-100 col-12'/>
+                
+                <img src={background} className='img w-100 col-12 order-3'/>
             </div>
         </footer>
     )

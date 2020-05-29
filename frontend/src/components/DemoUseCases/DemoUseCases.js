@@ -34,7 +34,7 @@ export default function DefaultUseCases(){
      return(
          <section className="container bg-primary">
             <div className="row pt-5">
-             <h3 className="col-12 h1 justify-content-center d-flex text-white font-weight-bold"> 
+             <h3 className="col-12 h2 justify-content-center d-flex text-white font-weight-bold"> 
                 {title}
              </h3>
             
