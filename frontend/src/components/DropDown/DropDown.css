@@ -1,0 +1,40 @@
+  
+.DropDown{
+    max-width:75px;
+    width:auto;
+    text-align:left;
+    padding:0;
+    margin:0;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+     
+}
+/* .DropDown__content>a,.DropDown__content>button{
+    padding:5px 0px;
+} */
+.DropDown__content{
+    z-index:2;
+    right:0;
+    margin-top:50px;
+    -webkit-transform: translate3d(0,0,0);
+    position:absolute;
+    width:175px;
+    background-color:#FFFFFF;
+    padding:10px;
+}
+.DropDown__button{
+    width:100px;
+    z-index:2;    
+    padding:0px;
+    border:none;
+    outline:none;
+    background-color:#FFFFFF;
+}
+.DropDown__button>svg{
+    height:35px;
+    width:35px;
+}
+.DropDown__button:hover{
+    cursor: pointer;
+}
